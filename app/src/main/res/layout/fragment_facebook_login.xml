@@ -2,14 +2,24 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/test_nyc">
+    android:background="@drawable/test_nyc"
+    android:useDefaultMargins="false"
+    android:id="@+id/topContainer">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/date_my_son_text"
+        android:layout_marginTop="150dp" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp" />
+        android:layout_gravity="top|center"
+        android:layout_marginTop="50dp" />
+
+
 
 
 </GridLayout>
